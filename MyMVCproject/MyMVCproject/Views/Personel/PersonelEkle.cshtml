@@ -1,0 +1,40 @@
+﻿@model myfirstproject.Models.siniflar.Personel
+
+@{
+    ViewBag.Title = "PersonelEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2 style=" font-size:25px ">Yeni Personel Sayfası </h2>
+<br />
+
+@using(Html.BeginForm("PersonelEkle", "Personel", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<form class="form-group" method="post">
+
+    <div>
+        @Html.Label("Personel Ad")
+        @Html.TextBoxFor(x => x.PersonelAd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Soyad")
+        @Html.TextBoxFor(x => x.PersonelSoyad, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Mail")
+        @Html.TextBoxFor(x => x.PersonelMail, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Görsel")
+        <input type="file" name="PersonelGorsel" />
+        <br />
+        @Html.LabelFor(x => x.Departman)
+        @Html.DropDownListFor(x => x.Departmanid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" }) @*controller personelekle dgr1 degeri geliyor.*@
+
+        <br />
+        <button class="btn btn-info"> Kaydet </button>
+
+    </div>
+</form>
+}
+
+
+

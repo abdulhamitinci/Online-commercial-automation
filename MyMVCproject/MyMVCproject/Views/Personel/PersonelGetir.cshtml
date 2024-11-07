@@ -1,0 +1,32 @@
+﻿@model myfirstproject.Models.siniflar.Personel
+@{
+    ViewBag.Title = "PersonelGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Personel Güncelleme</h2>
+<br />
+@using (Html.BeginForm("PersonelGuncelle", "Personel", FormMethod.Post, new { enctype = "multipart/form-data" })) //method, controller belirtisi
+{  // post işlemi gerçekleştirdikden sonra hangi acsionresult çalışacak
+    <div class="form-group">
+        @Html.Label("Personel Ad")
+        @Html.TextBoxFor(x => x.PersonelAd, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Soyad")
+        @Html.TextBoxFor(x => x.PersonelSoyad, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Mail")
+        @Html.TextBoxFor(x => x.PersonelMail, new { @class = "form-control" })
+        <br />
+        @Html.Label("Personel Görsel")
+        <input type="file" name="PersonelGorsel" />
+        <br />
+        @Html.LabelFor(x => x.Departman)
+        @Html.DropDownListFor(x => x.Departmanid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.PersonelId)
+    </div>
+    <button class="btn btn-warning" style="background-color:yellowgreen "> Güncelle </button>
+    //ürün güncellede id gözükmemesi ama güncellemede işimize yarıcağından gizli
+}
+

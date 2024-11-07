@@ -1,0 +1,40 @@
+﻿@model myfirstproject.Models.siniflar.Cariler
+@{
+    ViewBag.Title = "CariEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<br />
+<h2 style=" font-size:25px ">Yeni Müşteri Sayfası </h2>
+<br />
+
+<form class="form-group" method="post">
+
+    <div>
+        @Html.Label("Adı")
+        @Html.TextBoxFor(x => x.CariAd, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CariAd, "", new { @style = "color:red" }) @*bu validasyon doğrulaması uyarı mesajını cariler modelsden alıcak*@
+
+        <br />
+        @Html.Label("Soyadı")
+        @Html.TextBoxFor(x => x.CariSoyad, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şehir")
+        @Html.TextBoxFor(x => x.CariSehir, new { @class = "form-control" })
+        <br />
+        @Html.Label("Mail Adres")
+        @Html.TextBoxFor(x => x.CariMail, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CariMail, "", new { @style = "color:red" }) @*bu validasyon doğrulaması uyarı mesajını cariler modelsden alıcak*@
+
+        <br />
+        <button class="btn btn-info" id="kaydet"> Kaydet </button>
+        <script>
+            $('#kaydet').click(function () {
+                swal("Müşteri Eklendi");
+            })
+        </script>
+    </div>
+</form>

@@ -1,0 +1,34 @@
+﻿@model  List<myfirstproject.Models.siniflar.Personel>
+
+@{
+    ViewBag.Title = "DepartmanDetay";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Departman Detay</h2>
+<br />
+
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active"> Departman Adı: @ViewBag.DptAd  </li>
+</ol>
+
+<table class="table table-hover">
+    <tr>
+        @*Tablo Başlıkları*@
+        <th>Personel</th>
+        <th>Görsel</th>
+        <th>Satışlar</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+    <tr>
+        <td>@x.PersonelAd  @x.PersonelSoyad</td>
+        <td>
+            <img src="@x.PersonelGorsel" width="100px" height="90px"/>
+        </td>
+        <td> <a href="/Departman/DptPersonelSatis/@x.PersonelId" class="btn btn-default" style="background-color:darkorange">Satışlar</a> </td>
+    </tr>
+    }
+</table>
+
+

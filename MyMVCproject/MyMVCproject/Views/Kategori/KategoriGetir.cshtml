@@ -1,0 +1,20 @@
+﻿@model  myfirstproject.Models.siniflar.Kategori
+
+@{
+    ViewBag.Title = "KategoriGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2>Kategori Güncelleme</h2>
+<br />
+@using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
+{  // post işlemi gerçekleştirdikden sonra hangi acsionresult çalışacak 
+    <div class="form-group">
+        @Html.Label("Kategori Adı")
+        @Html.TextBoxFor(x => x.KategoriAd, new { @class = "form-control" })
+        @Html.HiddenFor(x => x.KategoriId)
+    </div>
+    <button class="btn btn-warning"> Güncelle </button>
+    //ürün güncellede id gözükmemesi ama güncellemede işimize yarıcağından gizli   
+}
+

@@ -28,7 +28,7 @@ Entity Framework (EF), Microsoft tarafından geliştirilen bir Object-Relational
 -Migration Kullanımı Projede veritabanı değişikliklerini yönetmek ve izlemek için Entity Framework Migration'ları kullanılmıştır. Migration'lar, veritabanı şemasında yapılan değişikliklerin kaydedilmesini ve uygulanmasını sağlar. Bu sayede, veritabanı şeması ile model sınıfları arasında senkronizasyon sağlanır ve veritabanı yapısındaki değişiklikler kolayca yönetilebilir. Migration'lar, veritabanı güncellemelerinin aşamalı ve güvenli bir şekilde uygulanmasına olanak tanır, böylece veritabanı ve uygulama modeli arasındaki uyumsuzluklar minimize edilir. 
 
 ##VERİTABANI SINIF DİYAGRAMI
-<img src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/veritaban%C4%B1Diyagram.jpg?raw=true" alt="Veritabanı Diyagramı">
+<img src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/veritaban%C4%B1Diyagram.png?raw=true">
 
 ##AUTHENTİCATİON
 Projede oturum açma (authentication) ve yetkilendirme (authorization) işlemleri, kullanıcıların sisteme güvenli bir şekilde giriş yapabilmesi ve yetkili oldukları alanlara erişim sağlayabilmesi için önemli bir rol oynamaktadır. Bu süreç, kullanıcıların kimlik doğrulama işlemi yaparak sisteme giriş yapmalarını ve yalnızca yetkili oldukları sayfalara erişim sağlamalarını içerir. 
@@ -45,7 +45,7 @@ Tüm sayfalarda yetkilendirme işlemlerinin uygulanabilmesi için, global olarak
 
 ##LİNQ SORGULARI
 Projede , veri tabanına yönelik birçok sorgu LINQ kullanarak gerçekleştirildi . Örneğin, istatistikler sayfasında çeşitli raporlar ve analizler için LINQ sorguları  kullanıldı. Bu sorgular, veritabanındaki verileri analiz etmek, filtrelemek, sıralamak ve gruplamak  için kullanıldı. Linq sorgulaıryla oluşturulmuş İstatistikler sayfasının göünüşü:  
-<img width="934" alt="istatistikler" src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/g%C3%B6rsel2.png?raw=true">
+<img width="934" alt="istatistikler" src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/g%C3%B6rsel2.png?raw=true">
 
 
 
@@ -59,12 +59,13 @@ Projede veritabanı bütünlüğünü ve veri doğruluğunu sağlamak için teti
 
 # PROJE GÖRSELLERİ
 
-<img width="918" alt="loginekrani" src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/projeg%C3%B6rseli1.png?raw=true">
+<img width="918" alt="loginekrani" src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/projeg%C3%B6rseli1.png?raw=true">
 
-<img width="858" alt="kayitekrani" src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/projeg%C3%B6rseli2.png?raw=true">
+<img width="858" alt="kayitekrani" src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/projeg%C3%B6rseli2.png?raw=true">
 
-<img width="940" alt="hizlibakistablolari" src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/projeg%C3%B6rseli3.png?raw=true">
+<img width="940" alt="hizlibakistablolari" src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/projeg%C3%B6rseli3.png?raw=true">
 
-<img width="935" alt="mesajkutusu" src="https://github.com/abdulhamitinci/MyMVCproject/blob/main/PresentationPhoto/projeg%C3%B6rseli4.png?raw=true">
-#   O n l i n e - c o m m e r c i a l - a u t o m a t i o n  
+<img width="935" alt="mesajkutusu" src="https://github.com/abdulhamitinci/Online-commercial-automation/blob/main/PresentationPhoto/projeg%C3%B6rseli4.png?raw=true">
+#   O n l i n e - c o m m e r c i a l - a u t o m a t i o n 
+ 
  
